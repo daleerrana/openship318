@@ -98,6 +98,12 @@ export const Webhooks = ({
       description:
         "When an order is chargebacked on the shop, Openship will mark the order status cancelled",
     },
+	 {
+      callbackUrl: `/api/triggers/fulfill-order-request-submitted/${type}`,
+      topic: "FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_SUBMITTED",
+      description:
+        "When an order is chargebacked on the shop, Openship will mark the order status cancelled",
+    },
   ].filter((item) => {
     return (
       existingWebhooks.filter((existItem) => {
