@@ -32,6 +32,7 @@ export default async (req, res) => {
         "read_merchant_managed_fulfillment_orders",
         "write_merchant_managed_fulfillment_orders",
         "read_shopify_payments_disputes",
+			"read_third_party_fulfillment_orders",
       ],
       accessMode: "offline",
       timeout: 10000,
